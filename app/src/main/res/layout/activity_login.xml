@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounnd"
+    android:orientation="vertical"
+    tools:context=".login">
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_gravity="top"
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="30dp">
+        <Button
+            android:drawableLeft="@drawable/ic_smartphone"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:text="Đăng nhập với Số điện thoại"
+            android:background="@drawable/body"
+            app:backgroundTint="@color/green"
+            android:layout_width="350dp"
+            android:layout_height="50dp">
+        </Button>
+        <Button
+            android:drawableLeft="@drawable/ic_facebook_circular_logo"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:text="Đăng nhập với Số điện thoại"
+            android:background="@drawable/body"
+            app:backgroundTint="@color/blue"
+            android:layout_width="350dp"
+            android:layout_height="50dp">
+        </Button>
+        <Button
+            android:drawableLeft="@drawable/ic_google_plus"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:text="Đăng nhập với Số điện thoại"
+            android:background="@drawable/body"
+            app:backgroundTint="@color/red"
+            android:layout_width="350dp"
+            android:layout_height="50dp">
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Hoặc đăng nhập bằng tài khoản của bạn"
+            android:textColor="#DFD1D1"
+            android:textSize="11sp">
+        </TextView>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/body_edittext"
+            android:textColorHint="#DFD1D1"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/ic_baseline_mail_24"
+            android:hint="Email"
+            android:layout_width="346dp"
+            android:layout_height="50dp">
+        </EditText>
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/body_edittextpass"
+            android:textColorHint="#DFD1D1"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:hint="Mật khẩu"
+            android:layout_width="346dp"
+            android:layout_height="50dp">
+        </EditText>
+        <Button
+            android:id="@+id/btdangnhap"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:text="Đăng nhập"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/body"
+            app:backgroundTint="@color/white">
+        </Button>
+        <TextView
+            android:id="@+id/tvqmk"
+            android:layout_gravity="center"
+            android:textColor="#DFD1D1"
+            android:textSize="11sp"
+            style="@style/Hyperlink"
+            android:layout_marginTop="30dp"
+            android:text="Quên mật khẩu?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chúng tôi không sử dụng thông tin của bạn với bất kỳ mục đích nào."
+            android:textColor="#DFD1D1"
+            android:textSize="11sp">
+        </TextView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bằng cách đăng nhập hoặc đăng ký, bạn đồng ý với"
+                android:textColor="#DFD1D1"
+                android:textSize="11sp">
+            </TextView>
+
+            <TextView
+                android:textColor="#2738A9"
+                android:textSize="11sp"
+                style="@style/Hyperlinkblue"
+                android:layout_marginLeft="3dp"
+                android:text="Chính sách quy định"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+        <TextView
+            android:textColor="#2738A9"
+            android:textSize="11sp"
+            style="@style/Hyperlinkblue"
+            android:text="của Foody."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
