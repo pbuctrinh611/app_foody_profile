@@ -2,47 +2,50 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Hyperlink"
     android:orientation="vertical">
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/sillva"
+            android:id="@+id/picture"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
         <LinearLayout
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:orientation="horizontal">
-            <ImageView
-                android:src="@drawable/sillva"
-                android:id="@+id/picture"
-                android:layout_width="50dp"
-                android:layout_height="50dp" />
-            <LinearLayout
-                android:paddingLeft="5dp"
-                android:layout_width="match_parent"
+            android:layout_marginLeft="7dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/title"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="[DN] Không săn hơi phí SIÊU TIỆC 111K!!"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:id="@+id/content"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tặng bạn yêu và hội bạn mã NOWFOOD111 giảm ngay 50k cho dơn từ 161k nhé."
-                    android:textSize="14sp"/>
-                <TextView
-                    android:id="@+id/time"
-                    android:textSize="14dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5h">
-                </TextView>
-            </LinearLayout>
+                android:text="Không săn hơi phí SIÊU TIỆC 111K!!"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/content"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tặng"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/time"
+                android:textSize="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5h">
+            </TextView>
         </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
 
